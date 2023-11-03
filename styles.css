@@ -1,0 +1,144 @@
+@import url('https://fonts.cdnfonts.com/css/madegra-demo');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Madegra DEMO', sans-serif;
+}
+
+html,
+body {
+	background: #F8F5F1;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.column {
+	width: 50%;
+	height: 100vh;
+}
+
+.left {
+	position: relative;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url("images/leftMainImage.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+	padding: 3rem;
+	
+}
+
+.right {
+	display: flex;
+	padding: 3rem 0rem;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.img {
+	width: 200px;
+	height: 200px;
+	margin: 1rem;
+	cursor: pointer;
+}
+
+.img-1 {
+	background: url("images/rightSmall1.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-2 {
+	background: url("images/rightSmall2.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-3 {
+	background: url("images/rightSmall3.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-4 {
+	background: url("images/rightSmall4.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.header {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header h1 {
+	position: relative;
+}
+
+.ml12 .letter {
+	display: inline-block;
+	line-height: 1em;
+	color: #F331A3;
+	font-size: 72px;
+	font-family: 'Madegra DEMO', sans-serif;
+}
+
+.custom-button a {
+	text-decoration: none;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.custom-button {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Madegra DEMO', sans-serif;
+    text-decoration: none;
+    background: #F331A3;
+    padding: 1rem;
+    border-radius: 3px;
+    max-width: fit-content;
+}
+
+.left-column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+}
+
+@media (min-width: 900px) {
+	.container {
+		display: flex;
+	}
+
+	.images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 900px) {
+	.column {
+		width: 100%;
+	}
+
+	.img {
+		width: 400px;
+		height: 400px;
+	}
+
+	.header {
+		font-size: 20px;
+		padding: 80px 0;
+	}
+}
